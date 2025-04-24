@@ -1,0 +1,110 @@
+body {
+  background-color: rgb(122, 193, 255);
+  font-family: arial;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 22px;
+}
+
+.move-button {
+  background-color: rgb(75, 135, 255);
+  border: 3px solid rgb(0, 0, 0);
+  width: 140px;
+  height: 140px;
+  border-radius: 70px;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.move-button:hover
+ {
+  background-color: rgb(20, 67, 187);
+}
+
+.move-button:hover .move-icon {
+  height: 60px;
+}
+
+.move-button:active {
+  background-color: rgb(107, 181, 255);
+}
+
+.move-icon {
+  height: 50px;
+  transition: height 0.5s;
+}
+
+.result {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.score {
+  margin-top: 10px;
+
+}
+
+.reset-button, .auto-play-button {
+  border: none;
+  background-color: rgb(11, 141, 255);
+  color: white;
+  padding: 8px 15px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.reset-button:hover, .auto-play-button:hover {
+  background-color: rgb(5, 84, 187);
+}
+
+.reset-button:active, .auto-play-button:active {
+  background-color: rgb(111, 217, 255);
+}
+
+.js-text p {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.js-text button {
+  margin-right: 10px;
+  border: none;
+  background-color: rgb(215, 236, 255);
+  color: rgb(0, 0, 0);
+  padding: 8px 15px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.btn-1:hover {
+  background-color: rgb(182, 195, 242);
+}
+
+.btn-1:active {
+  background-color: rgb(64, 146, 227);
+}
+
+.btn-2:hover {
+  background-color: rgb(182, 195, 242);
+}
+
+.btn-2:active {
+  background-color: rgb(64, 146, 227);
+}
+
+.bottom-border {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
