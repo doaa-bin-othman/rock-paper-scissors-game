@@ -6,6 +6,7 @@ let score = JSON.parse(localStorage.getItem('score')) ||  {
 
 updateScoreElement();
 
+
 /*
 if (!score) {
   score = {
@@ -186,3 +187,26 @@ function pickComputerMove() {
       }
   return computerMove;
 }
+
+let darkModeOff = true;
+
+const darkMode = () => {
+  
+  const darkModeButton = document.querySelector('.dark-mode');
+  if (darkModeOff) {
+    darkModeButton.innerHTML = 'Light Mode';
+    const el = document.querySelector('link')
+    el.href = '12-rock-paper-scissors-darkMode.css';
+    darkModeOff = false;
+  }
+  else {
+    darkModeButton.innerHTML = 'Dark Mode';
+    const el = document.querySelector('link')
+    el.href = '12-rock-paper-scissors.css';
+    darkModeOff = true;
+  }
+}
+
+document.querySelector('.dark-mode').addEventListener('click', () => {
+  darkMode();
+})
