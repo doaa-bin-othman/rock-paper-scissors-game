@@ -53,7 +53,7 @@ body {
 
 }
 
-.reset-button, .auto-play-button {
+.reset-button, .auto-play-button, .dark-mode {
   border: none;
   background-color: rgb(11, 141, 255);
   color: white;
@@ -63,11 +63,11 @@ body {
   transition: background-color 0.1s;
 }
 
-.reset-button:hover, .auto-play-button:hover {
+.reset-button:hover, .auto-play-button:hover, .dark-mode:hover {
   background-color: rgb(5, 84, 187);
 }
 
-.reset-button:active, .auto-play-button:active {
+.reset-button:active, .auto-play-button:active, .dark-mode:active {
   background-color: rgb(111, 217, 255);
 }
 
@@ -107,4 +107,57 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (min-width: 1100px) {
+  .move-button {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+  }
+
+  .move-button:hover .move-icon {
+    height: 90px;
+  }
+
+  .move-icon {
+    height: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .move-button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+  }
+
+  .move-icon {
+    height: 40px;
+  }
+
+  .title {
+    font-size: 25px;
+    margin-top: 15px;
+  }
+
+  .result {
+    font-size: 20px;
+  }
+
+  .reset-button, .auto-play-button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .js-text p {
+    margin-right: 10px;
+  }
+
+  .js-text button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
 }
